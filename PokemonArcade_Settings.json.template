@@ -1,0 +1,11 @@
+{
+    "Token": "<BOT TOKEN GOES HERE>",
+    "IconURL": "<BOT AVATAR URL GOES HERE>",
+    "SupportServerURL": "<SERVER INVITE URL GOES HERE>",
+    "ImageChannelID": <Channel ID to put images into (preferably a private server)>,
+    "RomLocations": {
+        "red": "./pokemonred.gb",
+        "blue": "./pokemonblue.gb",
+        "yellow": "./pokemonyellow.gb"
+    }
+}
