@@ -196,7 +196,7 @@ class MyClient(discord.Client):
                     pass
             try:
                 # Try to send embed
-                await message.channel.send("", embed=GetEmbed("Pokémon Arcade is a Discord bot to play pokemon on Discord!\nPlay by voting on which action to take, or play your own way in singleplayer!\n\nCommands List:\n`PA!Join (Session ID)`: Joins a game\n`PA!Leave`: Leaves or stops the game\n`PA!Party`: Shows pokemon in your party\n`PA!Singleplayer`: Start a private game\n`PA!Singleplayer (yellow|blue|custom) (permanent)`: Start a different Pokémon game\n\nUse the reactions to interact\n:a: :b: :arrow_left: :arrow_up: :arrow_down: :arrow_right: - Press buttons\n:arrow_forward: - Start\n:blue_square: - Select\n:clock1: - Wait 2 in-game seconds\n\n[Support Server](https://discord.gg/wUHEQccS26)"))
+                await message.channel.send("", embed=GetEmbed(f"Pokémon Arcade is a Discord bot to play pokemon on Discord!\nPlay by voting on which action to take, or play your own way in singleplayer!\n\nCommands List:\n`PA!Join (Session ID)`: Joins a game\n`PA!Leave`: Leaves or stops the game\n`PA!Singleplayer`: Start a private game\n`PA!Singleplayer (yellow|blue|custom) (permanent)`: Start a different Pokémon game\n\nUse the reactions to interact\n:a: :b: :arrow_left: :arrow_up: :arrow_down: :arrow_right: - Press buttons\n:arrow_forward: - Start\n:blue_square: - Select\n:clock1: - Wait 2 in-game seconds\n\n[Support Server]({SupportServerURL})"))
             except discord.errors.Forbidden:
                 try:
                     # If sending embed failed, send this
@@ -505,4 +505,3 @@ class MyClient(discord.Client):
 
 client = MyClient()
 client.run(Settings["Token"])
-
