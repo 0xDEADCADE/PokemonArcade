@@ -168,8 +168,6 @@ class MyClient(discord.Client):
 
     async def on_message(self, message):
         global ChannelInfo
-        global StartNewGameDisabled
-        global shutdowntime
         global NintendoLogo
         global RomLocations
         # Don't respond to bots
