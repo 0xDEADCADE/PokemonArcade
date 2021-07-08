@@ -68,8 +68,6 @@ def startPyBoy(rom):
         pyboy.tick()
     return pyboy
 
-# StartNewGameDisabled is a bool to indicate if a new game can be started
-StartNewGameDisabled = False
 ChannelInfo = {"global": {"type": "global", "instance": startPyBoy("./pokemonred.gb"), "message": None, "removecounter": -1, "permanent": True, "filepath": "./pokemonred.gb", "sessionid": "global", "refer": "global", "playercount": 0, "TimerActive": False, "UsersReacted": {}, "VoteCounts": {"🅰": 0, "🅱": 0, "⬆": 0, "⬇": 0, "⬅": 0, "➡": 0, "▶": 0, "🟦": 0, "🕐": 0}}}
 # Maps emojis to buttons and the pressed (button) text
 emojiToButtonMap = {"🅰": [WindowEvent.PRESS_BUTTON_A, WindowEvent.RELEASE_BUTTON_A, "Pressed A"], "🅱": [WindowEvent.PRESS_BUTTON_B, WindowEvent.RELEASE_BUTTON_B, "Pressed B"], "⬆": [WindowEvent.PRESS_ARROW_UP, WindowEvent.RELEASE_ARROW_UP, "Pressed Up"], "⬇": [WindowEvent.PRESS_ARROW_DOWN, WindowEvent.RELEASE_ARROW_DOWN, "Pressed Down"], "⬅": [WindowEvent.PRESS_ARROW_LEFT, WindowEvent.RELEASE_ARROW_LEFT, "Pressed Left"], "➡": [WindowEvent.PRESS_ARROW_RIGHT, WindowEvent.RELEASE_ARROW_RIGHT, "Pressed Right"], "🟦": [WindowEvent.PRESS_BUTTON_SELECT, WindowEvent.RELEASE_BUTTON_SELECT, "Pressed Select"], "▶": [WindowEvent.PRESS_BUTTON_START, WindowEvent.RELEASE_BUTTON_START, "Pressed Start"]}
